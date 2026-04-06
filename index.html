@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="eJournal Universitas Hindu Indonesia - Akses jurnal ilmiah resmi UNHI seperti Dharmasmrti, Vidya Wertta, Widya Manajemen, Hita Akuntansi, Sewaka Bhakti dan lainnya. Open Access, terakreditasi Sinta.">
+    <meta name="keywords" content="eJournal UNHI, jurnal Dharmasmrti, Vidya Wertta, Widya Manajemen, Hita Akuntansi, Sewaka Bhakti, jurnal universitas hindu indonesia, open journal systems">
+    <title>Home | eJournal Universitas Hindu Indonesia</title>
+    <meta name="google-site-verification" content="SrTZawFSaLAONuV52vjH13dAEw3zOeO0J7W9G7wwpi8" />
+    <link rel="shortcut icon" href="https://e-journal-unhi-ac-id.github.io/icon-unhi.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;family=Open+Sans:wght@400;600&amp;display=swap');
+        :root { --primary: #daac2f; }
+        * { font-family: 'Roboto', system-ui, sans-serif; }
+        .header-top { background: linear-gradient(to right, #daac2f, #f6801e); }
+        .nav-link { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .nav-link:hover { color: #ffcc00; transform: translateY(-1px); }
+        .hero-bg { 
+            background: linear-gradient(rgba(215, 162, 19, 0.88), rgba(215, 162, 19, 0.88)), 
+                        url('https://e-journal-unhi-ac-id.github.io/logo-ejournal-unhi.png') center/cover no-repeat; 
+        }
+        .section-title::after { 
+            content: ''; display: block; width: 70px; height: 3px; background: #ffcc00; margin: 10px auto 0; 
+        }
+        .journal-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- HEADER SAMA PERSIS SEBELUMNYA -->
+<header class="sticky top-0 z-50 shadow-lg">
+    <div class="header-top text-white text-sm py-2">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <div class="flex items-center gap-x-6 text-xs">
+                <a href="#" class="flex items-center hover:text-yellow-300"><i class="fa-solid fa-globe mr-1"></i> English</a>
+                <a href="#" class="flex items-center hover:text-yellow-300"><i class="fa-solid fa-user mr-1"></i> Login</a>
+                <a href="#" class="flex items-center hover:text-yellow-300"><i class="fa-solid fa-user-plus mr-1"></i> Register</a>
+            </div>
+            <div class="flex items-center gap-x-4 text-xs">
+                <a href="https://unhi.ac.id/" class="hover:text-yellow-300">UNHI Official</a>
+                <span class="text-yellow-300">•</span>
+                <span class="font-medium">Open Journal Systems 3.4.0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white border-b">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="https://e-journal-unhi-ac-id.github.io/logo-ejournal-unhi.png" 
+                     alt="eJournal Universitas Hindu Indonesia" 
+                     class="h-16 w-auto object-contain drop-shadow-md">
+                <div class="ml-4">
+                    <h1 class="text-2xl font-bold text-[#daac2f] leading-none">eJournal</h1>
+                    <p class="text-sm text-gray-600 font-medium tracking-widest">UNIVERSITAS HINDU INDONESIA</p>
+                </div>
+            </div>
+
+            <div class="flex-1 max-w-xl mx-8">
+                <form class="relative">
+                    <input type="text" id="search-input" placeholder="Cari judul artikel, penulis, atau jurnal..." 
+                           class="w-full bg-gray-100 border border-gray-300 focus:border-[#daac2f] rounded-full py-3 px-6 pl-12 text-sm focus:outline-none focus:ring-2 focus:ring-[#daac2f]/30">
+                    <button type="submit" class="absolute left-5 top-1/2 -translate-y-1/2 text-[#daac2f]">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="flex items-center gap-x-6">
+                <a href="#" class="text-[#daac2f] hover:text-yellow-400 transition-colors">
+                    <i class="fa-solid fa-book-open text-2xl"></i>
+                </a>
+                <a href="#" class="bg-[#daac2f] hover:bg-[#f6801e] text-white px-6 py-2.5 rounded-full text-sm font-semibold flex items-center gap-x-2 transition-all">
+                    <i class="fa-solid fa-home"></i> <span>Beranda</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bg-white border-b shadow-sm">
+        <div class="max-w-7xl mx-auto px-6">
+            <ul class="flex items-center text-sm font-medium text-gray-700">
+                <li class="border-b-4 border-[#daac2f] py-4 px-6"><a href="#" class="nav-link text-[#daac2f]">BERANDA</a></li>
+                <li class="py-4 px-6"><a href="#" class="nav-link">TENTANG</a></li>
+                <li class="py-4 px-6"><a href="#" class="nav-link">JURNAL</a></li>
+                <li class="py-4 px-6"><a href="#" class="nav-link">EDISI TERKINI</a></li>
+                <li class="py-4 px-6"><a href="#" class="nav-link">ARTIKEL</a></li>
+                <li class="py-4 px-6"><a href="#" class="nav-link">PENGUMUMAN</a></li>
+                <li class="py-4 px-6"><a href="#" class="nav-link">SUBMIT MANUSKRIP</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero-bg text-white py-24">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-5xl font-bold leading-tight mb-5">eJournal Universitas Hindu Indonesia</h2>
+        <p class="text-xl max-w-2xl mx-auto">Platform Open Access resmi yang mempublikasikan hasil penelitian dan pengabdian masyarakat berbasis nilai-nilai Hindu dan kebudayaan Bali.</p>
+        <div class="flex justify-center gap-4 mt-10">
+            <a href="#" class="bg-yellow-400 hover:bg-yellow-300 text-[#daac2f] font-semibold px-8 py-4 rounded-2xl inline-flex items-center text-lg shadow-lg">JELAJAHI SEMUA JURNAL</a>
+            <a href="#" class="border-2 border-white hover:bg-white hover:text-[#daac2f] font-semibold px-8 py-4 rounded-2xl inline-flex items-center text-lg">SUBMIT ARTIKEL SEKARANG</a>
+        </div>
+    </div>
+</section>
+
+<main class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-12 gap-8">
+
+    <!-- LEFT COLUMN -->
+    <div class="col-span-8 space-y-14">
+
+        <!-- Pengumuman Terbaru -->
+        <div>
+            <h3 class="section-title text-3xl font-bold text-[#daac2f] mb-6">PENGUMUMAN TERBARU</h3>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="bg-white border border-gray-200 rounded-3xl p-7 journal-card transition-all">
+                    <span class="inline-block text-xs bg-amber-400 text-[#daac2f] px-4 py-1 rounded-full font-semibold">5 April 2026</span>
+                    <h4 class="mt-5 text-xl font-semibold leading-tight">Call for Papers – Widya Manajemen Vol. 8 No. 1 Tahun 2026</h4>
+                    <p class="text-gray-600 mt-4 text-sm">Tema: "Digital Transformation dan Keberlanjutan Bisnis Berbasis Nilai Lokal". Deadline: 30 Mei 2026.</p>
+                    <a href="#" class="mt-6 text-[#daac2f] font-medium inline-flex items-center text-sm">Baca detail <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-3xl p-7 journal-card transition-all">
+                    <span class="inline-block text-xs bg-amber-400 text-[#daac2f] px-4 py-1 rounded-full font-semibold">20 Maret 2026</span>
+                    <h4 class="mt-5 text-xl font-semibold leading-tight">Empat Jurnal UNHI Raih Akreditasi Sinta 2</h4>
+                    <p class="text-gray-600 mt-4 text-sm">Dharmasmrti, Vidya Wertta, Hita Akuntansi dan Keuangan, serta Widya Kesehatan berhasil mempertahankan dan meningkatkan akreditasi.</p>
+                    <a href="#" class="mt-6 text-[#daac2f] font-medium inline-flex items-center text-sm">Lihat pengumuman lengkap <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Edisi Terkini - Jurnal Spesifik -->
+        <div>
+            <h3 class="section-title text-3xl font-bold text-[#daac2f] mb-6">EDISI TERKINI</h3>
+            <div class="grid grid-cols-3 gap-6">
+
+                <!-- Jurnal 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden border journal-card transition-all">
+                    <img src="https://ejournal.unhi.ac.id/public/journals/1/cover_issue_45_id_ID.jpg" alt="Dharmasmrti" class="w-full h-52 object-cover">
+                    <div class="p-6">
+                        <p class="text-xs text-emerald-700 font-medium">DHARMASMRTI: Jurnal Ilmu Agama dan Kebudayaan</p>
+                        <h4 class="font-semibold mt-1">Volume 15 Nomor 1 • April 2026</h4>
+                        <p class="text-sm text-gray-600 mt-4 line-clamp-3">Fokus pada dialog akademik agama Hindu, kebudayaan Bali, dan isu kontemporer.</p>
+                    </div>
+                </div>
+
+                <!-- Jurnal 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden border journal-card transition-all">
+                    <img src="https://ejournal.unhi.ac.id/public/journals/2/cover_issue_32_id_ID.jpg" alt="Vidya Wertta" class="w-full h-52 object-cover">
+                    <div class="p-6">
+                        <p class="text-xs text-emerald-700 font-medium">VIDYA WERTTA</p>
+                        <h4 class="font-semibold mt-1">Volume 6 Nomor 2 • Oktober 2025 (Terbit Baru)</h4>
+                        <p class="text-sm text-gray-600 mt-4 line-clamp-3">Terbit dua kali setahun oleh Fakultas Ilmu Agama dan Kebudayaan UNHI.</p>
+                    </div>
+                </div>
+
+                <!-- Jurnal 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden border journal-card transition-all">
+                    <img src="https://ejournal.unhi.ac.id/public/journals/3/cover_issue_18_id_ID.jpg" alt="Widya Manajemen" class="w-full h-52 object-cover">
+                    <div class="p-6">
+                        <p class="text-xs text-emerald-700 font-medium">WIDYA MANAJEMEN</p>
+                        <h4 class="font-semibold mt-1">Volume 8 Nomor 1 • Februari 2026</h4>
+                        <p class="text-sm text-gray-600 mt-4 line-clamp-3">Jurnal di bawah Program Studi Manajemen Fakultas Ekonomi dan Bisnis UNHI.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Daftar Jurnal Lainnya -->
+        <div class="bg-white border border-gray-200 rounded-3xl p-8">
+            <h3 class="text-2xl font-bold text-[#daac2f] mb-6">Jurnal Lainnya yang Tersedia</h3>
+            <div class="grid grid-cols-2 gap-x-12 gap-y-5 text-sm">
+                <a href="#" class="flex items-center gap-3 hover:text-[#daac2f]"><span class="text-[#ffcc00]">•</span> Hita Akuntansi dan Keuangan (HAK)</a>
+                <a href="#" class="flex items-center gap-3 hover:text-[#daac2f]"><span class="text-[#ffcc00]">•</span> Sewaka Bhakti (Pengabdian Masyarakat)</a>
+                <a href="#" class="flex items-center gap-3 hover:text-[#daac2f]"><span class="text-[#ffcc00]">•</span> Widya Biologi</a>
+                <a href="#" class="flex items-center gap-3 hover:text-[#daac2f]"><span class="text-[#ffcc00]">•</span> Widya Kesehatan</a>
+                <a href="#" class="flex items-center gap-3 hover:text-[#daac2f]"><span class="text-[#ffcc00]">•</span> RESI: Jurnal Riset Sistem Informasi</a>
+                <a href="#" class="flex items-center gap-3 hover:text-[#daac2f]"><span class="text-[#ffcc00]">•</span> Dharma Bhakti</a>
+                <a href="#" class="flex items-center gap-3 hover:text-[#daac2f]"><span class="text-[#ffcc00]">•</span> International Journal of Interreligious and Intercultural Studies (IJIIS)</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- RIGHT COLUMN - Sidebar -->
+    <div class="col-span-4 space-y-10">
+
+        <div class="bg-white border border-gray-200 rounded-3xl p-7">
+            <h3 class="font-bold text-[#daac2f] mb-5 flex items-center"><i class="fa-solid fa-list mr-2"></i> STATISTIK TERKINI</h3>
+            <div class="grid grid-cols-2 gap-6 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-emerald-600">12</div>
+                    <div class="text-xs tracking-widest text-gray-500">JURNAL AKTIF</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-emerald-600">9.856</div>
+                    <div class="text-xs tracking-widest text-gray-500">ARTIKEL DITERBITKAN</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-3xl p-7">
+            <h3 class="font-bold text-[#daac2f] mb-5">ARTIKEL POPULER MINGGU INI</h3>
+            <ol class="space-y-6 text-sm">
+                <li class="border-l-4 border-[#ffcc00] pl-4">
+                    <a href="#" class="hover:text-[#daac2f]">Pengaruh Tri Hita Karana terhadap Kepuasan Kerja Karyawan di Industri Pariwisata Bali</a>
+                    <p class="text-xs text-gray-500 mt-1">Dharmasmrti • 2026</p>
+                </li>
+                <li class="border-l-4 border-[#ffcc00] pl-4">
+                    <a href="#" class="hover:text-[#daac2f]">Strategi Digital Marketing Berbasis Budaya Lokal pada UMKM Bali</a>
+                    <p class="text-xs text-gray-500 mt-1">Widya Manajemen • Vol. 8 No. 1</p>
+                </li>
+                <li class="border-l-4 border-[#ffcc00] pl-4">
+                    <a href="#" class="hover:text-[#daac2f]">Penerapan Ayurveda dalam Pengobatan Tradisional Bali Modern</a>
+                    <p class="text-xs text-gray-500 mt-1">Widya Kesehatan • 2025</p>
+                </li>
+            </ol>
+        </div>
+
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-[#daac2f] text-white pt-12 pb-8">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-12 gap-8">
+        <div class="col-span-4">
+            <img src="https://e-journal-unhi-ac-id.github.io/logo-ejournal-unhi.png" alt="Logo" class="h-14 mb-4 opacity-90">
+            <p class="text-sm opacity-75">Platform publikasi ilmiah Universitas Hindu Indonesia yang dikelola oleh LPPM UNHI Denpasar. Mendukung penelitian berbasis nilai Hindu, budaya, dan ilmu pengetahuan kontemporer.</p>
+        </div>
+        <div class="col-span-2">
+            <h4 class="font-semibold mb-4">LINK CEPAT</h4>
+            <ul class="space-y-2 text-sm opacity-75">
+                <li><a href="#" class="hover:text-yellow-300">Daftar Jurnal</a></li>
+                <li><a href="#" class="hover:text-yellow-300">Panduan Penulis</a></li>
+                <li><a href="#" class="hover:text-yellow-300">Etika Publikasi</a></li>
+            </ul>
+        </div>
+        <div class="col-span-2">
+            <h4 class="font-semibold mb-4">KONTAK</h4>
+            <p class="text-sm opacity-75">Jl. Sangalangit, Tembau, Penatih<br>Denpasar, Bali 80234</p>
+            <p class="mt-4 text-sm opacity-75">Email: ejournal@unhi.ac.id</p>
+        </div>
+        <div class="col-span-4 text-xs opacity-50">
+            © 2026 Universitas Hindu Indonesia • All Rights Reserved<br>
+            Powered by Open Journal Systems (OJS) • Fresh content updated April 2026
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('search-input').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter' && this.value.trim() !== '') {
+            alert('Hasil pencarian untuk: "' + this.value + '"\n\n(Demo – pada situs asli akan menampilkan hasil artikel dari database OJS UNHI)');
+        }
+    });
+    console.log('%cHomepage eJournal UNHI dengan konten jurnal spesifik telah diperbarui (April 2026)', 'color:#daac2f; font-weight:bold');
+</script>
+</body>
+</html>
